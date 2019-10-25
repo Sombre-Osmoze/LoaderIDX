@@ -9,7 +9,7 @@ import Foundation
 
 public class IDX {
 
-	init(_ data: Data) throws {
+	public init(_ data: Data) throws {
 		// Verify that we have data and file information
 		let infoSizeInt = MemoryLayout<Int32>.stride
 
