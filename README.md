@@ -16,9 +16,9 @@ import IDX
 
 To load a IDX file, juste create a `IDX` object,
 ```Swift
-	let file = try Data(contentsOf: <#T##URL#>)
+let file = try Data(contentsOf: <#T##URL#>)
 	
-	let dataset = try IDX(file)
+let dataset = try IDX(file)
 ```
 The initializer will parse the file and extract data information from it, then will verify the data length.
 
@@ -27,8 +27,8 @@ To get the number of data check the `count` property.
 
 To access a vector, matrice or image data use the subscript.
 ```Swift
-	// Access the first image in the data set 
-	let image = dataset[0]
+// Access the first image in the data set 
+let image = dataset[0]
 ```
 
 > If you ever want to get the file raw data use the `data` property
